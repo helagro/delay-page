@@ -21,7 +21,7 @@ function hasParams(urlParams){
 
 function delay(urlParams, callback){
     const delayDuration = urlParams.has("delay") ? urlParams.get("delay") : DEFAULT_DELAY
-    setTimeout(callback, delayDuration)
+    setTimeout(callback, delayDuration * 1000)
 }
 
 function openDestination(urlParams){
